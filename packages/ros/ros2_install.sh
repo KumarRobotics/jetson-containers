@@ -43,7 +43,7 @@ else
     COLCON_FLAGS="--symlink-install"
 fi
 
-colcon build ${COLCON_FLAGS} --base-paths src --event-handlers console_direct+ 
+colcon build ${COLCON_FLAGS} -DCMAKE_POLICY_VERSION_MINIMUM=3.5 --base-paths src --event-handlers console_direct+ 
 
 #rm -rf ${ROS_WORKSPACE}/src
 #rm -rf ${ROS_WORKSPACE}/logs
